@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.task-list {
+  margin: 0 auto;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 0px 2px 14px rgba(0, 0, 0, 0.3);
+}
+
+.task-list h2 {
+  background-color: #fff;
+  width: 100%;
+  margin-top: 10;
+  text-align: center;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+li:hover {
+  background-color: aquamarine;
+  border-radius: 10px;
+}
+
+.completed-task {
+  color: black;
+  background: aquamarine;
+}
+
+label {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+input[type='checkbox'] {
+  margin-right: 10px;
+}
+
+.completed {
+  text-decoration: line-through;
+  color: red;
+}
+
+/* EXTRA SMALL DEVICES */
+@media (max-width: 481px) and (max-width: 767px) {
+  .App {
+    padding: 0px;
+  }
+
+  .task-list {
+    width: 360px;
+  }
+}
+
+/* MOBILE */
+@media (max-width: 480px) {
+  .App {
+    padding: 0px;
+  }
+
+  .task-list {
+    width: 349px;
+  }
+}
+
+/* SMALL TABLETS */
+@media (min-width: 768px) and (max-width: 991px) {
+  .App {
+    padding: 1rem;
+    margin: 0;
+  }
+
+  .task-list {
+    width: 600px;
+    border-radius: 15px;
+  }
+}
+
+/* LARGE TABLETS/LAPTOPS */
+@media (min-width: 992px) and (max-width: 1199px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .task-list {
+    width: 700px;
+    border-radius: 15px;
+  }
+}
+
+/* DESKTOP */
+@media (min-width: 1200px) and (max-width: 1919px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .task-list {
+    width: 800px;
+    border-radius: 15px;
+  }
+}
+
+/* EXTRA LARGE SCREEN  */
+@media (min-width: 1920px) {
+  .App {
+    padding: 1rem;
+  }
+
+  .task-list {
+    width: 1000px;
+    border-radius: 15px;
+  }
+}
